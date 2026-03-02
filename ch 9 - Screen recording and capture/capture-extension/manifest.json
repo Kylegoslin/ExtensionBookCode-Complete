@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Screen capture extension",
+  "description": "Screen capture extension",
+  "minimum_chrome_version": "116",
+  "version": "1.0",
+    "permissions": [
+    "activeTab",
+    "tabCapture", 
+    "contextMenus",
+    "notifications",
+    "pageCapture",
+    "downloads",
+    "offscreen"
+  ],
+
+   "action": {
+    "default_title": "Click to open panel",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+      "service_worker": "background.js"
+   }
+   
+}
+ 
+  
+
+
+
+
+
+

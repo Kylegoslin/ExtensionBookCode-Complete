@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Activity Logger",
+  "description": "Activity Logger side panel",
+  "version": "1.0",
+    "permissions": [
+    "activeTab",
+    "sidePanel",
+    "storage",
+    "tabs",
+    "alarms"
+  ],
+   "side_panel": {
+    "default_path": "side.html"
+  },
+   "options_page": "options.html",
+   "action": {
+    "default_title": "Click to open",
+    "default_icon": "icon.png"
+  },
+  "background": {
+        "service_worker": "background.js",
+        "type": "module"
+  },
+  "commands": {
+   "open-tab": {
+     "suggested_key": {
+       "default": "Alt+Shift+W"
+     },
+     "description": "Open options.html"
+   }
+  }
+ 
+  
+}
+
+
+
+
+

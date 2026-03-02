@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div id="loginPanel" style="width:300px; height:300px; padding:10px">
+    <h1>Login</h1>
+
+
+    Email address
+    <input type="email" class="form-control" id="userEmail" aria-describedby="" placeholder="">
+
+    Password
+    <input type="password" class="form-control" id="userPassword" aria-describedby="" placeholder="">
+
+    <div style="height:50px"></div>
+
+    <button id="loginButton" type="button" class="btn btn-primary">Login</button>
+
+    <br>
+    No account? <br>
+    <button id="signupButton" type="button" class="btn btn-primary">Signup</button>
+    <div style="height:50px"></div>
+
+
+  </div>
+
+
+
+
+
+  <div id="registerSuccessPanel" style="width:300px;height:300px; padding:10px">
+    <h2> Success!</h2>
+
+    <br>
+
+
+    Head back to login with your new account!
+
+
+
+  </div>
+
+
+  <div id="registerPanel" style="width:300px;height:300px; padding:10px">
+    <h2> Register</h2>
+
+    <br>
+
+
+    Email address
+    <input type="text" class="form-control" id="registerEmail" aria-describedby="" placeholder="">
+
+    Password
+    <input type="password" class="form-control" id="registerPassword" aria-describedby="" placeholder="">
+
+    <div style="height:50px"></div>
+
+    <button id="registerButton" type="button" class="btn btn-primary">Register</button>
+
+
+    <div style="height:50px"></div>
+
+
+  </div>
+
+  <div id="dashboardPanel" style="width:300px;height:300px; padding:10px">
+    <h2> Dashboard</h2>
+
+    <br>
+
+
+    Welcome!
+
+    <div style="height:50px"></div>
+
+    <button id="logoutButton" type="button" class="btn btn-primary">Log out</button>
+  </div>
+
+
+
+
+  <div id="incorrectPanel" style="width:300px;height:300px; padding:10px">
+    <h2> Login incorrect</h2>
+
+    <br>
+
+
+    Please try again
+
+
+
+    <div style="height:50px"></div>
+    <button id="goToLoginButton" type="button" class="btn btn-primary">Go to login</button>
+
+  </div>
+
+  <div id="loggedoutPanel" style="width:300px;height:300px; padding:10px">
+    <h2> Logged out</h2>
+
+    <br>
+
+
+    You are now logged out
+
+
+
+    <div style="height:50px"></div>
+    <button id="goToLogin" type="button" class="btn btn-primary">Go to login</button>
+
+  </div>
+
+
+  <script src="lib/jquery.js"></script>
+  <script src="lib/bootstrap.bundle.min.js"></script>
+  <script src="popup.js"></script>
+
+
+</body>
+
+</html>

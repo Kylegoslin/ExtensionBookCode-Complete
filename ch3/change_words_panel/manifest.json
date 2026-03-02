@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Word filter",
+  "description": "Word filter",
+  "version": "1.0",
+    "permissions": [
+    "activeTab",
+    "scripting",
+    "sidePanel"
+  ],
+   "side_panel": {
+    "default_path": "side.html"
+  },
+   "content_scripts": [
+     {
+     "matches": ["https://*.google.com/*"],
+     "js": ["contentscript.js"]
+    }],
+  
+   "action": {
+    "default_title": "Click to open panel",
+    "default_icon": "icon.png"
+  }
+}
+
+
+
+
+

@@ -1,0 +1,110 @@
+<html>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <body style="padding:10px">
+    <h1>Snippet Manager</h1>
+    
+    <div style="width:500px; height:100%">
+  
+    <b>Select list</b>
+
+
+    <select id="myListNames" class="form-select">
+      <option selected></option>
+    </select>
+  
+    <br>
+    <b>Add new list</b>
+    <input type="text" class="form-control" id="newListName">
+    <div style="height:10px"></div>
+
+
+    <button type="submit" id="addNewList" class="btn btn-primary">Add</button>
+
+    <button type="button" id ="openSave" class="btn btn-primary">
+      Save new Snippet
+    </button>
+    
+    <br>
+    <div style="height:20px">
+
+    </div>
+
+    <b>My Snippets</b>
+  
+      <table id="Snippet_table"class="table table-hover">
+        <tbody>
+       <tr>
+          <td>ID</td>
+          <td>List</td>
+          <td>Snippet</td>
+          <td>Time saved</td>
+       </tr>
+   
+      </tbody>
+      </table>    
+  </div>
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+  <!--- ############ Save new Snippet modal -->
+  <div class="modal fade" id="saveNewModal" tabindex="-1" role="dialog" aria-labelledby="saveNewModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="saveNewModalLabel">Add new Snippet</h5>
+        </div>
+        <div class="modal-body">
+          <textarea id="newSnippetContent" rows="5" cols="40"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button id="closeSave" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button id="saveSnippet" type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- ############ View single Snippet modal -->
+  <div class="modal fade" id="viewSingleSnippet" tabindex="-1" role="dialog" aria-labelledby="viewSingleSnippetLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="viewSingleSnippetLabel">Snippet</h5>
+        </div>
+        <div class="modal-body">
+          ID: <span id="currentSnippetId"></span>
+          <br>
+          <textarea id="viewSingleTA" rows="5" cols="40"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button id="closeSingleSnippet" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="lib/jquery.js"></script>
+  <script src="lib/bootstrap.bundle.min.js"></script>
+  <script src="lib/popup.js"></script>
+  </body>
+</html>
+

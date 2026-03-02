@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "File viewer and editor",
+  "description": "File viewer and editor",
+  "version": "1.0",
+  "action": {
+    "default_popup": "interface.html",
+    "default_icon": "icon.png"
+  },
+  "permissions":[ "tabs", "activeTab"]
+}

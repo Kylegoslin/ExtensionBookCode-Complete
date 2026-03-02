@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+</head>
+<body>
+<h1> Activity Logger</h1>
+
+<b>Status:</b>
+<div id="status"> Inactive </div>
+
+
+<div style="height:50px"></div>
+
+<button id="startSession" type="button" class="btn btn-primary">Start Session</button>
+<button id="stopSession" type="button" class="btn btn-primary">Stop Session</button>
+
+
+<br>
+<div style="height:50px"></div>
+
+
+<h2>Statistics </h2>
+<div>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Count</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Total URLs recorded</th>
+        <td>
+          <div id="total_urls_ui">0</div>
+        </td>
+
+      </tr>
+
+
+      <tr>
+        <th scope="row">Unique URLs viewed</th>
+        <td>
+          <div id="unique_url_ui">0</div>
+        </td>
+
+      </tr>
+
+      <tr>
+
+
+      <tr>
+        <th scope="row">Total time</th>
+        <td>
+          <div id="totalTime">0</div>
+        </td>
+
+      </tr>
+      <tr>
+
+
+
+    </tbody>
+
+  </table>
+
+</div>
+
+<div style="height:50px"></div>
+
+
+
+<h2>History</h2>
+
+
+
+
+<textarea id="history" rows="10" cols="30"></textarea>
+
+
+
+<div style="height:50px"></div>
+
+<button id="options" type="button" class="btn btn-primary">Extension options</button>
+<button id="clear" type="button" class="btn btn-primary">Clear All</button>
+
+
+
+
+<script src="lib/jquery.js"></script>
+<script src="lib/bootstrap.bundle.min.js"></script>
+<script src="popup.js"></script>
+
+
+</body>
+
+</html>

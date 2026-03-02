@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Save and retrieve data",
+  "description": "Save and retrieve data",
+  "version": "1.0",
+  "action": {
+    "default_popup": "interface.html",
+    "default_icon": "icon.png"
+  },
+  "permissions":["scripting", "storage"]
+}

@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Time tracking extension",
+  "description": "My custom time tracking extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "interface.html",
+    "default_icon": "icon.png"
+  },
+  "permissions":["tabs", "webRequest"],
+   "host_permissions": [
+   "http://*/*",
+    "https://*/*"
+
+  ]
+}
